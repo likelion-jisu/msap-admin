@@ -1,0 +1,3 @@
+insert into setting(tid, agent_num, vuser_num, target_server, test_time, test_count, ramp_up_use_yn, init_count, init_wait_time, inc_unit, period) values (1, 1, 10, 'www.google.com', '01:00', 1, 'Y', 0, 0, 1, 1000);
+
+insert into setting(tid, agent_num, vuser_num, target_server, test_time, test_count, ramp_up_use_yn, init_count, init_wait_time, inc_unit, period) values (2, 2, 20, 'www.google.com', '02:00', 1, 'N', null, null, null, null);
