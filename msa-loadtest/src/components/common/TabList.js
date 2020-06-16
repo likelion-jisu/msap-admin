@@ -4,6 +4,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import TabPanel from './TabPanel';
 import WritePage from '../../pages/WritePage';
+import { Link } from 'react-router-dom';
 class TabList extends Component {
   constructor(props) {
     super(props);
@@ -29,9 +30,24 @@ class TabList extends Component {
             onChange={this.handleChange}
             aria-label="simple tabs example"
           >
-            <Tab label="설정하기" {...this.a11yProps(0)} />
-            <Tab label="진행현황" {...this.a11yProps(1)} />
-            <Tab label="보고서 " {...this.a11yProps(2)} />
+            <Tab
+              label="설정하기"
+              component={Link}
+              to="/setting"
+              {...this.a11yProps(0)}
+            />
+            <Tab
+              label="진행현황"
+              component={Link}
+              to="/prog"
+              {...this.a11yProps(1)}
+            />
+            <Tab
+              label="보고서 "
+              component={Link}
+              to="/report"
+              {...this.a11yProps(2)}
+            />
           </Tabs>
         </AppBar>
         <TabPanel value={this.state.value} index={0}>

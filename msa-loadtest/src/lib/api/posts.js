@@ -1,6 +1,7 @@
 import client from './client';
 
-export const setData = ({
+export const writePost = ({
+  t_id,
   t_name,
   agent_num,
   vuser_num,
@@ -13,7 +14,8 @@ export const setData = ({
   inc_unit,
   period,
 }) =>
-  client.post('/api/posts', {
+  client.post('api/', {
+    t_id,
     t_name,
     agent_num,
     vuser_num,

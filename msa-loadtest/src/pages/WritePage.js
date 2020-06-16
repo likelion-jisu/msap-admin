@@ -1,11 +1,13 @@
 import React from 'react';
-import SettingForm from '../containers/write/SettingForm';
+import SettingContainer from '../containers/write/SettingContainer';
 import WriteTemplate from '../components/write/WriteTemplate';
+import WriteActonButtonsContainer from '../containers/write/WriteActionButtonsContainer';
 
 const WritePage = () => {
   return (
     <WriteTemplate>
-      <SettingForm type="setting" />
+      <WriteActonButtonsContainer />
+      <SettingContainer type="setting" />
     </WriteTemplate>
   );
 };
