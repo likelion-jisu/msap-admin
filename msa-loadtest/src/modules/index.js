@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 //import { all } from 'redux-saga/effects';
-import write, { writeSaga } from './write';
+import write from './write';
 
 const rootReducer = combineReducers({
   write,

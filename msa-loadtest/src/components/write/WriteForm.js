@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
